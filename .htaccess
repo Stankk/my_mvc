@@ -1,7 +1,5 @@
-RewriteEngine on
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond $1 !^(rsc)
-RewriteRule ^(.*)$ /index.php?url=$1 [L]
-
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    my_mvc/public/    [L]
+    RewriteRule    (.*) my_mvc/public/$1    [L]
+ </IfModule>
