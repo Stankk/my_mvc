@@ -20,7 +20,7 @@ define('DB_HOST', 'localhost');
 //INSERT INTO `items` VALUES(2, 'Buy Application');
 //
 
-
+require_once ('../library/model.class.php');
 
 class Item extends Model {
 
