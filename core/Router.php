@@ -17,8 +17,8 @@ class Router
         // The first part of the URL is the controller name
         $controller = isset($url_array[0]) ? $url_array[0] : '';
         array_shift($url_array);
-        // The second part is the method name
 
+        // The second part is the method name
         $action = isset($url_array[0]) ? $url_array[0] : '';
         array_shift($url_array);
 
