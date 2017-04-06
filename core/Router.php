@@ -8,7 +8,7 @@
  */
 class Router
 {
-    public function route($url)
+    public static function route($url)
     {
         // Split the URL into parts
         $url_array = array();
