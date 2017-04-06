@@ -11,7 +11,6 @@ class Router
     public static function route($url)
     {
         // Split the URL into parts
-        $url_array = array();
         $url_array = explode("/", $url);
 
         // The first part of the URL is the controller name
